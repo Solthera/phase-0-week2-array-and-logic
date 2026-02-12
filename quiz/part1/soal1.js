@@ -4,8 +4,7 @@ Tugas kamu adalah mengimplementasikan fungsi dataHandling agar dapat menampilkan
 */
 
 function dataHandling(_input) {
-    let n = _input.length;
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < _input.length; i++) {
         for (let j = 0; j < _input[i].length; j++) {
             switch (j) {
                 case 0:
@@ -37,7 +36,7 @@ let input = [
   ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"],
 ];
 
-console.log(dataHandling(input));
+dataHandling(input);
 
 /*
 output yang diharapkan

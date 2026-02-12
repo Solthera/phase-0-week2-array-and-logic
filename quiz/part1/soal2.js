@@ -8,17 +8,18 @@ function dataHandling2(input) {
     console.log(input)
 
     const daftarBulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-    let tgl = input[3].slice(3, 5)
-    console.log(daftarBulan[parseInt(tgl) - 1])
+    let month = input[3].slice(3, 5)
+    console.log(daftarBulan[parseInt(month) - 1])
 
-    console.log(input[3].split("/").reverse())
+    let date = input[3].split("/")
+    console.log([date[2], date[0], date[1]])
     
     console.log(input[3].split("/").join("-"))
 
     console.log(input[1].slice(0, 15))
 }
 
-console.log(dataHandling2(input))
+dataHandling2(input)
 
 /**
  * keluaran yang diharapkan (pada console)

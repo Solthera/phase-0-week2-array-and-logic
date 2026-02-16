@@ -6,17 +6,19 @@ note kenapa angka 343 adalah palindrome? karena angka 343 dibalik tetep 343 eaaa
 */
 
 function angkaPalindrome(num) {
-    let palindrom = num.toString().split("").reverse().join("");
+    num++
+    let palindrom = num.toString().split("").reverse().join("")
 
-    if (num.toString() === palindrom) {
-        return String(num + 1)
-    } else {
+    if (num.toString() !== palindrom) {
         while (num.toString() !== palindrom) {
             num++
-            palindrom = num.toString().split("").reverse().join("");
+            palindrom = num.toString().split("").reverse().join("")
         }
+
         return palindrom
     }
+
+    return palindrom
 }
 
 // TEST CASES
